@@ -1,0 +1,17 @@
+name: scroll_when_needed
+description: A packages that allows us to only scroll when needed
+version: 0.0.1
+homepage: https://github.com/vanlooverenkoen/flutter_scroll_when_needed
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
