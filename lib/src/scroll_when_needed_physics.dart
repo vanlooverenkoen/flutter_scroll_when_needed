@@ -5,15 +5,15 @@ class ScrollWhenNeededPhysics extends ScrollPhysics {
   final TargetPlatform targetPlatform;
 
   const ScrollWhenNeededPhysics(
-      {@required this.targetPlatform, ScrollPhysics parents})
+      {required this.targetPlatform, ScrollPhysics? parents})
       : super(parent: parents);
 
   const ScrollWhenNeededPhysics._internal(
-      {@required this.targetPlatform, @required ScrollPhysics parent})
+      {required this.targetPlatform, required ScrollPhysics? parent})
       : super(parent: parent);
 
   @override
-  ScrollWhenNeededPhysics applyTo(ScrollPhysics ancestor) {
+  ScrollWhenNeededPhysics applyTo(ScrollPhysics? ancestor) {
     return ScrollWhenNeededPhysics._internal(
       targetPlatform: targetPlatform,
       parent: buildParent(ancestor),

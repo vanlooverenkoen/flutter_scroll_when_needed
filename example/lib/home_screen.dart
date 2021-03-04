@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     onPressed: () {
                       setState(() {
-                        return _physics = ScrollWhenNeededPhysics(targetPlatform: Theme.of(context).platform);
+                        _physics = ScrollWhenNeededPhysics(targetPlatform: Theme.of(context).platform);
                       });
                     },
                   ),
