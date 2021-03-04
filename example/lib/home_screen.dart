@@ -24,19 +24,24 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Expanded(
                   child: MaterialButton(
-                    color: _physics is AlwaysScrollableScrollPhysics ? Colors.black : Colors.blue,
+                    color: _physics is AlwaysScrollableScrollPhysics
+                        ? Colors.black
+                        : Colors.blue,
                     child: Text(
                       'ALWAYS',
                       style: TextStyle(color: Colors.white, fontSize: 12),
                     ),
                     onPressed: () {
-                      setState(() => _physics = AlwaysScrollableScrollPhysics());
+                      setState(
+                          () => _physics = AlwaysScrollableScrollPhysics());
                     },
                   ),
                 ),
                 Expanded(
                   child: MaterialButton(
-                    color: _physics is ClampingScrollPhysics ? Colors.black : Colors.blue,
+                    color: _physics is ClampingScrollPhysics
+                        ? Colors.black
+                        : Colors.blue,
                     child: Text(
                       'CLAMPING',
                       style: TextStyle(color: Colors.white, fontSize: 12),
@@ -48,7 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Expanded(
                   child: MaterialButton(
-                    color: _physics is NeverScrollableScrollPhysics ? Colors.black : Colors.blue,
+                    color: _physics is NeverScrollableScrollPhysics
+                        ? Colors.black
+                        : Colors.blue,
                     child: Text(
                       'NEVER',
                       style: TextStyle(color: Colors.white, fontSize: 12),
@@ -60,14 +67,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Expanded(
                   child: MaterialButton(
-                    color: _physics is ScrollWhenNeededPhysics ? Colors.black : Colors.blue,
+                    color: _physics is ScrollWhenNeededPhysics
+                        ? Colors.black
+                        : Colors.blue,
                     child: Text(
                       'ONLY WHEN NEEDED',
                       style: TextStyle(color: Colors.white, fontSize: 12),
                     ),
                     onPressed: () {
                       setState(() {
-                        _physics = ScrollWhenNeededPhysics(targetPlatform: Theme.of(context).platform);
+                        _physics = ScrollWhenNeededPhysics(
+                            targetPlatform: Theme.of(context).platform);
                       });
                     },
                   ),
