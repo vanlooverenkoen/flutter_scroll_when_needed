@@ -1,3 +1,6 @@
+## [3.0.0] - 11-05-2023
+Added support for flutter 3.10.0 (update min flutter version)
+
 ## [2.0.0] - 04-03-2021
 Added support for flutter 2.0 & dart 2.12
 Migrated codebase to nullsafety
