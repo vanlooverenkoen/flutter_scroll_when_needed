@@ -6,7 +6,7 @@ class ScrollWhenNeededBehavior extends ScrollBehavior {
       BuildContext context, Widget child, AxisDirection axisDirection) {
     final theme = Theme.of(context);
     final platform = theme.platform;
-    final accentColor = theme.accentColor;
+    final accentColor = theme.colorScheme.primary;
     return Theme(
       data: theme.copyWith(platform: TargetPlatform.iOS),
       child: GlowingOverscrollIndicator(
