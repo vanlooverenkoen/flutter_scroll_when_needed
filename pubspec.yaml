@@ -1,11 +1,11 @@
 name: scroll_when_needed
 description: A packages that allows us to only scroll when needed with the correct platform specific behaviour.
-version: 3.0.0
+version: 3.0.1
 homepage: https://github.com/vanlooverenkoen/flutter_scroll_when_needed
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=3.10.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
 
 dependencies:
   flutter:

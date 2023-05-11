@@ -1,3 +1,6 @@
+## [3.0.1] - 11-05-2023
+Fixed min flutter version
+
 ## [3.0.0] - 11-05-2023
 Added support for flutter 3.10.0 (update min flutter version)
 
